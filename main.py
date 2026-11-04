@@ -36,8 +36,8 @@ def keep_alive():
 # ==========================================
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
-SENDER_EMAIL = os.getenv("SENDER_EMAIL", "edanbot6@gmail.com")
-SENDER_PASSWORD = os.getenv("SENDER_PASSWORD", "hscbokeaqeznclpn")
+SENDER_EMAIL = os.getenv("SENDER_EMAIL")
+SENDER_PASSWORD = os.getenv("SENDER_PASSWORD")
 RECEIVER_EMAIL = os.getenv("RECEIVER_EMAIL", "botedancomunal@gmail.com")
 
 
