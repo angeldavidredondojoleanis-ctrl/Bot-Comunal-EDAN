@@ -32,13 +32,13 @@ def keep_alive():
     t.start()
 
 # ==========================================
-# 2. CONFIGURACIÓN DE CORREO (SMTP GMAIL)
+# 2. REGISTRO DE ALERTA EDAN (LOGS DE RENDER)
 # ==========================================
-SMTP_SERVER = "smtp.gmail.com"
-SMTP_PORT = 587
-SENDER_EMAIL = os.getenv("SENDER_EMAIL")
-SENDER_PASSWORD = os.getenv("SENDER_PASSWORD")
-RECEIVER_EMAIL = os.getenv("RECEIVER_EMAIL", "botedancomunal@gmail.com")
+def enviar_correo_alerta(reporte_texto):
+    print("==================================================")
+    print("🚨 [ALERTA EDAN REGISTRADA EN LA NUBE] 🚨")
+    print(reporte_texto)
+    print("==================================================")
 
 
 def enviar_correo_alerta(reporte_texto):
