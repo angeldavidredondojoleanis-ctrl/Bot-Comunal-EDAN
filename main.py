@@ -128,7 +128,7 @@ def main():
     # 1. Encender primero el servidor Flask en segundo plano para abrir el puerto de Render
     keep_alive()
     
-    token = os.getenv("TELEGRAM_TOKEN")
+    token = os.getenv("TELEGRAM_TOKEN","9281335310:AAFlf-x6bgydYV_ePhmXv-cN2HwNcB9Hwhk")
     if not token:
         print("Error: TELEGRAM_TOKEN no está configurado en las variables de entorno.")
         return
